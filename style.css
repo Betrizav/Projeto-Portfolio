@@ -25,16 +25,57 @@ body{
     position: relative;
     width: 280px;
     height: 400px;
-    margin: 30px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    margin: 60px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
     background-image: url("imagens/git.jpeg") ;
     background-repeat: no-repeat;
-    background-size: 280px;
+    background-size: 290px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+.container .cardzinhos .corpo{
+    padding: 30px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.container .cardzinhos:hover .corpo{
+transform: translateY(1px);
+opacity: 1;
+color: #EE82EE;
+background-color: rgba(000, 000, 000, 0.5);
+opacity: 11px;
+border-radius: 5px;
+width:270px;
+height: 340px;
+}
+
+.container .cardzinhos:hover .corpo h1{
+    position: absolute;
+    top: -40px;
+    right: 50px;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.015);
+    pointer-events: none;
+   
+}
+
+.container .cardzinhos:hover .corpo h2{
+    font-size: 1.9em;
+    color: white;
+    z-index: 1;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    
 }
